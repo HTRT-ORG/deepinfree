@@ -1,12 +1,16 @@
 [package]
 name = "deepinfree"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2024"
 
+[lib]
+name = "deepinfree"
+path = "src/lib.rs"
+
 [dependencies]
-serde = { version = "1.0.219", features = ["derive"] }
-base64 = "0.22.1"
-serde_json = "1.0.140"
-reqwest = { version = "0.12.15", features = ["blocking", "cookies"] }
 anyhow = "1.0.98"
+base64 = "0.22.1"
+reqwest = { version = "0.12.15", features = ["blocking", "cookies", "json"] }
 scraper = "0.23.1"
+serde = { version = "1.0.196", features = ["derive"] }
+serde_json = "1.0.113"
